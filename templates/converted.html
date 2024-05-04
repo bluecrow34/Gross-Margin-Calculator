@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/base.css">
+</head>
+    <body>
+ <h1> <a href="/">2023 Staffing Gross Margin Calculator</a></h1>
+  <div class="content_wrapper">
+        <div class="card_bg">
+    <div class="card 1st_card">
+      <div class="card-content">
+        <p class="location">State:</p>
+        <h1 class="degree">{{ selectedState }} 
+      </div>
+    </div>
+    <div class="card 2nd_card">
+      <div class="card-content">
+        <p class="location">Gross Margin:</p>
+        <h1 class="degree">{{ grossMargin }}% </h1>
+      </div>
+      <div class="card-image">
+       <img src="https://images.unsplash.com/photo-1653116318794-1e5823f0f451?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3Jvc3MlMjBwcm9maXR8ZW58MHx8MHx8fDA%3D" border="0">
+      </div>
+    </div>
+     <div class="card 3rd_card">
+      <div class="card-content">
+        <p class="location">Weekly Billing</p>
+        <h1 class="degree">${{ weekBill }}</h1>
+      </div>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1593672715438-d88a70629abe?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHx8MHx8fDA%3D" border="0">
+      </div>
+    </div>
+    <div class="card 4th_card">
+      <div class="card-content">
+        <p class="location">Total Revenue:</p>
+        <h1 class="degree">${{ totalRevenue }} </h1>
+      </div>
+      <div class="card-image">
+       <img src="https://images.unsplash.com/photo-1593672715438-d88a70629abe?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHx8MHx8fDA%3D" border="0">
+      </div>
+    </div>
+    <div class="card 5th_card">
+      <div class="card-content">
+        <p class="location">Weekly Pay:</p>
+        <h1 class="degree">${{ weekPay }} </h1>
+      </div>
+      <div class="card-image">
+       <img src="https://images.unsplash.com/photo-1707762890671-52ef6d6f51e7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3Jvc3MlMjBwcm9maXR8ZW58MHx8MHx8fDA%3D"  border="0">
+      </div>
+    </div>
+    <div class="card 6th_card">
+      <div class="card-content">
+        <p class="location">Burden Rate:</p>
+        <h1 class="degree">${{ burdenRate}} </h1>
+      </div>
+      <div class="card-image">
+       <img src="https://images.unsplash.com/photo-1707762890671-52ef6d6f51e7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3Jvc3MlMjBwcm9maXR8ZW58MHx8MHx8fDA%3D" border="0">
+      </div>
+    </div>
+    <div class="card 7th_card">
+      <div class="card-content">
+        <p class="location">Sick Time:</p>
+        <h1 class="degree">${{ sickTimeRate}}</h1>
+      </div>
+      <div class="card-image">
+       <img src="https://images.unsplash.com/photo-1707762890671-52ef6d6f51e7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3Jvc3MlMjBwcm9maXR8ZW58MHx8MHx8fDA%3D"  border="0">
+      </div>
+    </div>
+    <div class="card 8th_card">
+      <div class="card-content">
+        <p class="location">Total Burden:</p>
+        <h1 class="degree">${{ totalBurden }}</h1>
+      </div>
+      <div class="card-image">
+       <img src="https://images.unsplash.com/photo-1707762890671-52ef6d6f51e7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3Jvc3MlMjBwcm9maXR8ZW58MHx8MHx8fDA%3D"  border="0">
+      </div>
+    </div>
+    <div class="card 9th_card">
+      <div class="card-content">
+        <p class="location">Total Cost:</p>
+        <h1 class="degree">${{ totalCost }}</h1>
+      </div>
+      <div class="card-image">
+       <img src="https://images.unsplash.com/photo-1653116318794-1e5823f0f451?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3Jvc3MlMjBwcm9maXR8ZW58MHx8MHx8fDA%3D"  border="0">
+      </div>
+    </div>
+    <div class="card 10th_card">
+      <div class="card-content">
+        <p class="location">Total Gross Margin:</p>
+        <h1 class="degree">${{ totalGM }}</h1>
+      </div>
+      <div class="card-image">
+       <img src="https://images.unsplash.com/photo-1593672715438-d88a70629abe?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXl8ZW58MHx8MHx8fDA%3D"  border="0">
+      </div>
+    </div>
+
+  </div>
+</div>
+    <button href="/">Find another conversion</button>
+</body>
+</body>
+
+</html>
